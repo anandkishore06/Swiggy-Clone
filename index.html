@@ -3,13 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./index.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700"
+    />
+    <style>
+      body {
+        font-family: Roboto, sans-serif;
+      }
+    </style>
     <title>Hey React</title>
   </head>
 
   <body>
     <div id="root">
-      <h1>Not Rendered</h1>  --- This tag is replaced by react element.
+      <h1>Not Rendered</h1>
+      --- This tag is replaced by react element.
     </div>
 
     <!-- <script>
@@ -22,7 +32,6 @@
         root.appendChild(heading)
     </script> -->
 
-    <script type="module" src="./App.js"></script>
+    <script type="module" src="./src/App.js"></script>
   </body>
 </html>
-

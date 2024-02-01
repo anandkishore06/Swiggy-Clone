@@ -42,6 +42,54 @@
     </html>
   '''
 
-# 02. What is CDN? Why do we use it?
 
-- 
+# Two Types of export & import :
+
+- Default Export/Import
+  export default Component; 
+  import Component from "path";
+
+- Named Export/Import
+
+  export const Component;
+  import {Component} from "path";
+
+# React Hooks
+
+- They are normal JS utility functions.
+  - useState() - Superpowerful State variables in react.
+  - useEffect()
+
+# Two types of routing - 
+
+- Client Side Routing
+- Server Side Routing
+
+# Redux Toolkit
+- Install @reduxjs/toolkit and react-redux
+- Build our store
+- Connect our store to our app
+- Create a Slice (cartSlice)
+- dispatch(action)
+- selector
+
+# Types of Testing (Developer)
+
+- Unit Testing
+  Testing one unit in isolation
+
+- Integration Testing
+  
+- End to End Testing - e2e Testing
+
+# Setting up Testing in our App
+- Installed React Testing library
+- Installed Jest
+- Installed Babel dependencies
+- Configure babel
+- Configure Parcel Config file to disable default babel transpilation
+- Jest Configuration  - npx jest --init 
+- Install jsdom lib
+- Install @babel/preset-react - to make JSX work in test cases
+- Include @babel/preset-react inside my babel config
+- Install @testing-library/jest-dom
