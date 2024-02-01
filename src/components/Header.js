@@ -1,10 +1,10 @@
 import { useState,useRef, useEffect, useContext } from "react";
 import LoadingBar from 'react-top-loading-bar'
 import { LOGO_URL } from "../utils/constants";
-import {Link, useSearchParams} from "react-router-dom";
+import {Link} from "react-router-dom";
 import useOnlineStatus from "../utils/useOnlineStatus";
 import UserContext from "../utils/UserContext";
-import { UseSelector, useSelector } from "react-redux/es/hooks/useSelector";
+import {  useSelector } from "react-redux";
 
 const Header = () => {
 
@@ -14,7 +14,8 @@ const Header = () => {
   // check online status
   const onlineStatus = useOnlineStatus();
 
-  const {loggedInUser} = useContext(UserContext);
+  const user = useContext(UserContext);
+  console.log(user);
 
   // Subscribing to the store using a selector.
   const cartItems = useSelector((store) => store.cart.items)
@@ -50,7 +51,7 @@ const Header = () => {
             <Link className="link-text" to="/grocery">Grocery</Link>
           </li>
           <Link to="/cart">
-          <li className="px-4">Cart ({cartItems.length})</li>
+          <li className="px-4">Cart({cartItems.length})</li>
           </Link>
          
           <li className="px-4"><button className="login-btn" onClick={ () => {
@@ -60,7 +61,7 @@ const Header = () => {
             btnName == "Login" ?setbtnName("Logout"):setbtnName("Login")
           }}>{btnName}</button></li>
            <li className="px-4">{onlineStatus?'✅':'🫥'}</li>
-           <li className="px-4 font-bold">{loggedInUser}</li>
+           <li className="px-4 font-bold">{user.loggedInUser}</li>
           
         </ul>
       </div>

@@ -1,0 +1,72 @@
+{
+    "info": {
+        "id": "587259",
+        "name": "Barista Coffee",
+        "cloudinaryImageId": "b64bf721e12e7b3df82c832898999c51",
+        "locality": "Kankarbagh Main Road",
+        "areaName": "Kankarbagh",
+        "costForTwo": "₹100 for two",
+        "cuisines": [
+            "Beverages",
+            "Snacks",
+            "Desserts"
+        ],
+        "avgRating": 3.9,
+        "parentId": "2359",
+        "avgRatingString": "3.9",
+        "totalRatingsString": "100+",
+        "sla": {
+            "deliveryTime": 68,
+            "lastMileTravel": 13.9,
+            "serviceability": "SERVICEABLE",
+            "slaString": "65-70 mins",
+            "lastMileTravelString": "13.9 km",
+            "iconType": "ICON_TYPE_EMPTY"
+        },
+        "availability": {
+            "nextCloseTime": "2024-02-01 23:00:00",
+            "opened": true
+        },
+        "badges": {},
+        "isOpen": true,
+        "type": "F",
+        "badgesV2": {
+            "entityBadges": {
+                "imageBased": {},
+                "textBased": {},
+                "textExtendedBadges": {}
+            }
+        },
+        "aggregatedDiscountInfoV3": {
+            "header": "₹125 OFF",
+            "subHeader": "ABOVE ₹449",
+            "discountTag": "FLAT DEAL"
+        },
+        "orderabilityCommunication": {
+            "title": {},
+            "subTitle": {},
+            "message": {},
+            "customIcon": {}
+        },
+        "differentiatedUi": {
+            "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+            "differentiatedUiMediaDetails": {
+                "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                "lottie": {},
+                "video": {}
+            }
+        },
+        "reviewsSummary": {},
+        "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+        "restaurantOfferPresentationInfo": {}
+    },
+    "analytics": {
+        "context": "seo-data-5f8e9b0e-55d7-48fa-a1a6-c0f45ceedf8e"
+    },
+    "cta": {
+        "link": "https://www.swiggy.com/restaurants/barista-coffee-main-road-kankarbagh-patna-587259",
+        "text": "RESTAURANT_MENU",
+        "type": "WEBLINK"
+    },
+    "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo"
+}

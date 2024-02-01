@@ -66,6 +66,7 @@ const Body = () => {
             type="text"
             className="border border-solid border-black rounded"
             placeholder="Search..."
+            data-testid = "searchInput"
             value={searchText}
             onChange={(e) => {
               setSearchText(e.target.value);

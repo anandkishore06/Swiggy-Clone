@@ -2,6 +2,7 @@ import { CDN_URL } from "../utils/constants";
 
 const RestaurantCard = (props) => {
   const { resData } = props;
+  console.log(resData);
   // const {resName, cuisine} = props // Destructuring - We can also pass props like {resName, cuisine}
   // console.log(props); // Object
 
@@ -9,7 +10,7 @@ const RestaurantCard = (props) => {
     resData.info;
 
   return (
-    <div className="m-4 p-4 w-[250px] bg-violet-200 rounded border border-solid border-yellow-500 hover:bg-green-300">
+    <div data-testid = "resCard" className="m-4 p-4 w-[250px] bg-violet-200 rounded border border-solid border-yellow-500 hover:bg-green-300">
       <img
         src={CDN_URL + cloudinaryImageId}
         alt="res-logo"

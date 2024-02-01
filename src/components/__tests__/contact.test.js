@@ -6,6 +6,20 @@ import "@testing-library/jest-dom";
 // Group multiple test cases in a single block using describe() -----
 // test == it ( we can also use it instead of test)
 describe("Contact Us Page Test Case", () => {
+
+    beforeAll(()=>{
+        console.log("BeforeAll");
+    })
+    beforeEach(()=>{
+        console.log("Before Each");
+    })
+    afterAll(()=>{
+        console.log("AfterAll");
+    })
+    afterEach(()=>{
+        console.log("AfterEach");
+    })
+
     test("Should Load Contact Us Component", () => {
         render(<Contact />);
     
